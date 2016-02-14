@@ -21,22 +21,22 @@ Activate this plugin and find your theme's [date archive templates](https://deve
 Find the [pagination functions](https://codex.wordpress.org/Pagination#Function_Reference) used by your theme and replace them with one of these functions.
 
 Display the next date archive page link.
-```PHP
+```php
 <?php cptdap_next_posts_link( $label = null ); ?>
 ```
 
 Return the next date archive page link.
-```PHP
+```php
 <?php cptdap_get_next_posts_link( $label = null ); ?>
 ```
 
 Display the previous date archive page link.
-```PHP
+```php
 <?php cptdap_previous_posts_link( $label = null ); ?>
 ```
 
 Return the previous date archive page link.
-```PHP
+```php
 <?php cptdap_get_previous_posts_link( $label = null ); ?>
 
 ```
@@ -50,7 +50,7 @@ If you don't use the `$label` parameter in the functions above the default text 
 ### Example ###
 Simple example to use the functions above.
 
-```PHP
+```php
 <?php
 // Check if it's a custom post type date archive
 if ( function_exists( 'cptda_is_cpt_date' ) && cptda_is_cpt_date() ) {
@@ -74,20 +74,20 @@ if ( function_exists( 'cptda_is_cpt_date' ) && cptda_is_cpt_date() ) {
 If you need to know the date of the next or previous date archive use these functions.
 
 Returns a next adjacent date archive page date.
-```PHP
+```php
 <?php cptdap_get_next_cpt_date_archive_date(); ?>
 
 ```
 
 Returns a previous adjacent date archive page date.
-```PHP
+```php
 <?php cptdap_get_previous_cpt_date_archive_date(); ?>
 
 ```
 
 ### Example ###
 Example to print the previous date archive date.
-```PHP
+```php
 <?php
 $next_date = '';
 
