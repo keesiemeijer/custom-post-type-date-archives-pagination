@@ -38,7 +38,7 @@ function cptdap_remove_pagination( $query ) {
 	}
 
 	if ( !is_admin() && $query->is_main_query() ) {
-		$query->set( ' nopaging', true );
+		$query->set( 'nopaging', true );
 	}
 }
 
